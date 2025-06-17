@@ -1,0 +1,370 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  background: black;
+  overflow-x: hidden;
+}
+
+.hero {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  position: relative;
+  height: 100vh;
+  background: none !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  will-change: opacity, transform;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1;
+  animation: fadeIn 2s ease-in;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 4em 2em;
+  text-align: center;
+  background: transparent;
+  animation: fadeIn 2s ease-in;
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  text-align: left;
+}
+
+.column {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+iframe {
+  width: 100%;
+  height: 315px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button {
+  padding: 1em 2em;
+  font-size: 1em;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project.two-columns {
+  margin-bottom: 6em;
+}
+.project iframe {
+  height: 220px;
+}
+
+
+/* Formulaire foncé comme le mock-up */
+form input,
+form textarea {
+  background-color: #0d0d0d;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #888;
+}
+
+form button {
+  background-color: #0d0d0d;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1em;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+
+
+
+.section-inner {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-left: 0;
+}
+
+
+/* --- Hero content sizing and mobile padding --- */
+.content {
+  will-change: opacity, transform;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+
+.tagline {
+  margin: 0.25em 0;
+  font-size: 1.25em;
+  line-height: 1.35;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  .tagline {
+    font-size: 1.05em;
+  }
+}
+
+.empty-column{visibility:hidden;height:0;}
+
+.two-columns.left-align{justify-content:flex-start;}
+
+
+/* --- Carte lecteur compact SoundCloud --- */
+.player-card{
+  background:#0b0b0b;
+  border-radius:8px;
+  padding:1rem 1.5rem;
+  box-shadow:0 0 15px rgba(0,0,0,.45);
+  max-width:360px;
+  margin:0 auto;
+}
+
+
+.social-icons {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+#bg{
+  position:fixed;
+  top:0;left:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  pointer-events:none;
+  background:#000;
+}
+.section,.two-columns,.project,.contact,form,.content,.column{position:relative;z-index:2;}
+  will-change: opacity, transform;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+.hero{position:relative;z-index:3;}
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+
+@keyframes float {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-6px) translateX(4px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+.float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-6px) translateX(4px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+.float-slow {
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.float1 { animation-duration: 8s; animation-delay: 0s; }
+.float2 { animation-duration: 10s; animation-delay: 1.5s; }
+.float3 { animation-duration: 12s; animation-delay: 0.7s; }
+.float4 { animation-duration: 9s; animation-delay: 1s; }
+.float5 { animation-duration: 11s; animation-delay: 2s; }
+
+
+.bounce-wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+@keyframes bounce-levitation {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.02); }
+  60%  { transform: scale(0.985); }
+  100% { transform: scale(1); }
+}
+.bounce-once {
+  animation: bounce-levitation 0.6s ease-out;
+}
+
+
+
+.appear {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.appear.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.appear {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform; /* optimisation animation */
+}
+
+.appear.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Réserver l'espace vertical pour éviter le saut final */
+.intro, .tagline {
+  min-height: 1em;
+}
+
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.scroll-indicator .arrow {
+  width: 30px;
+  height: 30px;
+  animation: bounce 2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.hero #hero-video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
